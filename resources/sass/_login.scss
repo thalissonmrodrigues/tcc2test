@@ -1,0 +1,158 @@
+html, body{
+  height: 100%;
+  background-color: $white;
+}
+
+.box-login {
+  @include media-breakpoint-down(sm) {
+    min-width: 270px;
+    min-height: 100px;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 20px 30px 20px;
+  position: relative;
+  min-width: 350px;
+  min-height: 230px;
+  box-shadow: 0 0 15px $gray-600;
+
+  .icon-user {
+    @include media-breakpoint-down(sm) {
+      width: 80px;
+      height: 80px;
+    }
+
+    background-color: $cyan-600;
+    border-radius: 100px;
+    display: inline-block;
+    height: 100px;
+    position: absolute;
+    top: -45px;
+    width: 100px;
+
+    > i {
+      @include media-breakpoint-down(sm) {
+        font-size: 55px;
+      }
+
+      font-size: 70px;
+      position: relative;
+      top: -5px;
+      color: $white;
+    }
+  }
+
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    label {
+      display: flex;
+      margin-bottom: 15px;
+      max-height: 30px;
+      div {
+        display: flex;
+        background-color: $gray-400;
+        border: $gray-500 solid 1px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        font-size: 18px;
+
+        i {
+          color: $gray-700;
+          position: relative;
+          top: 1px;
+        }
+      }
+
+      input {
+        @include media-breakpoint-down(sm) {
+          width: 190px;
+        }
+
+        border: $gray-500 solid 1px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-left: none;
+        outline: none;
+        height: 30px;
+        padding: 0 10px;
+        width: 300px;
+        font-size: 14px;
+      }
+    }
+
+    input[type="submit"] {
+      @include media-breakpoint-down(sm) {
+        min-width: 130px;
+        min-height: 40px;
+        bottom: -20px;
+      }
+
+      bottom: -24px;
+      position: absolute;
+      min-width: 250px;
+      min-height: 50px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      color: $white;
+      background-color: $cyan-600;
+      letter-spacing: 1px;
+
+      &:hover {
+        background-color: $cyan-700;
+      }
+    }
+  }
+}
+
+.nsa-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: $cyan-600;
+
+  i {
+    font-size: 38px;
+    position: relative;
+    top: 3px;
+    color: $white;
+  }
+
+  div {
+    background-color: $white;
+    border: solid 1px $gray-500;
+    position: absolute;
+    top: -110px;
+    right: 40px;
+    border-radius: 6px;
+    padding: 10px;
+
+    span {
+      font-weight: bold;
+      color: $cyan-600;
+    }
+  }
+
+  &:hover {
+    background-color: $cyan-700;
+  }
+}
