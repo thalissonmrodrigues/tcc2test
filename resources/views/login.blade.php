@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
-  <title>Login</title>
+  <title>NSA On-line</title>
 </head>
 <body>
   <div class="container d-flex flex-column justify-content-center align-items-center pb-5 h-100">

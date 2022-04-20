@@ -2,5 +2,5 @@
 require('./bootstrap');
 
 //Login
-require('./login');
+require('./toggles');
 
