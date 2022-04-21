@@ -1,200 +1,79 @@
-/**
-* Menu header.
-*/
-header {
-  border-bottom: solid 3px $cyan-600;
-}
-
-.user-right-header {
-  @include media-breakpoint-down(lg) {
-    display: none;
-  }
-
-  display: flex;
-  align-items: center;
-
-  .avatar {
-    background: $cyan-600;
-    height: 40px;
-    width: 40px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    &:hover {
-      background-color: $cyan-700;
-    }
-
-    i {
-      font-size: 30px;
-      color: $white;
-      position: relative;
-      top: -2px;
-    }
-
-    .menu-avatar {
-      background-color: $white;
-      border-radius: 6px;
-      border-top-right-radius: 0;
-      border: solid 1px $gray-500;
-      padding: 10px;
-      min-height: 65px;
-      position: absolute;
-      bottom: -80px;
-      right: 0px;
-
-      a {
-        text-decoration: none;
-        display: block;
-        font-weight: bold;
-        color: $gray-700;
-        text-align: right;
-        padding: 2px 0;
-
-        &:hover {
-          color: $cyan-600;
-        }
-      }
-
-      .logout {
-        color: $red-500;
-
-        &:hover {
-          color: $red-500;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  .welcome {
-    color: $gray-700;
-    text-align: right;
-    margin-right: 10px;
-
-    span:first-child {
-      display: block;
-      font-weight: bold;
-    }
-  }
-}
-
-.navbar {
-  font-weight: bold;
-  color: $gray-700;
+.content-area {
+  min-height: 70vh;
   position: relative;
-
-  button {
-    border: solid 1px $gray-700;
-
-    &:focus {
-      box-shadow: none;
-    }
-  }
-
-  a {
-    color: inherit;
-    text-align: right;
-
-    &:hover,
-    &.active {
-      color: $cyan-600;
-    }
-  }
-
-  .config,
-  .logout {
-    @include media-breakpoint-down(lg) {
-      display: block;
-    }
-
-    display: none;
-  }
-
-  .logout {
-    color: $red-500;
-
-    &:hover {
-      color: $red-500;
-      text-decoration: underline;
-    }
-  }
-
 }
 
-.sub-menu {
-  min-height: 90px;
-  background-color: #F2F2F2;
+.content {
+  .table {
+    color: $gray-700;
+    min-width: 650px;
 
-  .container {
-    @media (max-width: 400px) {
-      justify-content: center;
-      padding: 20px;
+    tbody {
+      tr {
+        line-height: 30px;
 
-      .actions {
-        margin-top: 20px;
+        &:nth-child(even) {
+          background-color: #F2F2F2;
+        }
+      }
+
+      .btn-operations {
+        border-color: $gray-600;
+        color: $gray-700;
+        font-weight: 600;
+
+        &:hover {
+          background-color: $gray-300;
+        }
       }
     }
+  }
+}
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.filter-area {
+  @include media-breakpoint-up(md) {
+    margin-right: 12px;
   }
 
-  .icon-area {
-    height:40px;
-    width: 40px;
-    background-color: $gray-700;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: $white;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  border: solid 1px $gray-500;
+  color: $cyan-600;
+  min-height: 100%;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: width .3s;
+  width: calc(100% / 12 * 1.5);
+  z-index: 100;
 
-    i{
-      color: white;
-      font-size: 20px;
-      position: relative;
-      top: 1px;
-    }
-  }
-
-  .title {
+  .filters {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: 10px;
-    padding-top: 5px;
-    color: $gray-700;
+    justify-content: flex-end;
 
-    span {
+    h3 {
       font-weight: bold;
+    }
+
+    label {
       font-size: 18px;
-
-      &:first-child {
-        font-weight: normal;
-        font-size: 12px;
-      }
+      font-weight: bold;
+      margin: 10px 0;
+      width: 100%;
     }
-  }
 
-  .btn-filter,
-  .btn-add {
-    border-color: $cyan-600;
-    color: $cyan-600;
-    font-weight: 600;
-    max-height: 37px;
-
-    &:hover {
+    input[type="submit"] {
       background-color: $cyan-600;
+      border-radius: 6px;
+      border: none;
       color: $white;
+      font-weight: bold;
+      margin-top: 30px;
+      padding: 10px 20px;
+      text-transform: uppercase;
     }
-  }
-
-  .btn-filter {
-    font-size: 17px;
-    margin-right: 10px;
   }
 }
-

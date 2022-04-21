@@ -1,29 +1,29 @@
 html, body{
-  height: 100%;
   background-color: $white;
+  height: 100%;
 }
 
 .box-login {
   @include media-breakpoint-down(sm) {
-    min-width: 270px;
     min-height: 100px;
+    min-width: 270px;
   }
 
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 0 15px $gray-600;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 6px;
+  min-height: 230px;
+  min-width: 350px;
   padding: 50px 20px 30px 20px;
   position: relative;
-  min-width: 350px;
-  min-height: 230px;
-  box-shadow: 0 0 15px $gray-600;
+  text-align: center;
 
   .icon-user {
     @include media-breakpoint-down(sm) {
-      width: 80px;
       height: 80px;
+      width: 80px;
     }
 
     background-color: $cyan-600;
@@ -39,10 +39,10 @@ html, body{
         font-size: 55px;
       }
 
+      color: $white;
       font-size: 70px;
       position: relative;
       top: -5px;
-      color: $white;
     }
   }
 
@@ -56,16 +56,17 @@ html, body{
       display: flex;
       margin-bottom: 15px;
       max-height: 30px;
+
       div {
-        display: flex;
-        background-color: $gray-400;
-        border: $gray-500 solid 1px;
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;
-        justify-content: center;
         align-items: center;
-        padding: 0 10px;
+        background-color: $gray-400;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+        border: $gray-500 solid 1px;
+        display: flex;
         font-size: 18px;
+        justify-content: center;
+        padding: 0 10px;
 
         i {
           color: $gray-700;
@@ -79,36 +80,36 @@ html, body{
           width: 190px;
         }
 
-        border: $gray-500 solid 1px;
-        border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
         border-left: none;
-        outline: none;
+        border-top-right-radius: 6px;
+        border: $gray-500 solid 1px;
+        font-size: 14px;
         height: 30px;
+        outline: none;
         padding: 0 10px;
         width: 300px;
-        font-size: 14px;
       }
     }
 
     input[type="submit"] {
       @include media-breakpoint-down(sm) {
-        min-width: 130px;
-        min-height: 40px;
         bottom: -20px;
+        min-height: 40px;
+        min-width: 130px;
       }
 
-      bottom: -24px;
-      position: absolute;
-      min-width: 250px;
-      min-height: 50px;
+      background-color: $cyan-600;
       border-radius: 6px;
       border: none;
-      outline: none;
-      font-weight: bold;
+      bottom: -24px;
       color: $white;
-      background-color: $cyan-600;
+      font-weight: bold;
       letter-spacing: 1px;
+      min-height: 50px;
+      min-width: 250px;
+      outline: none;
+      position: absolute;
 
       &:hover {
         background-color: $cyan-700;
@@ -118,41 +119,41 @@ html, body{
 }
 
 .nsa-info {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  height: 40px;
-  width: 40px;
+  background-color: $cyan-600;
   border-radius: 50px;
   border: none;
-  background-color: $cyan-600;
+  bottom: 20px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  width: 40px;
 
   i {
+    color: $white;
     font-size: 38px;
     position: relative;
     top: 3px;
-    color: $white;
   }
 
   div {
     background-color: $white;
-    border: solid 1px $gray-500;
-    position: absolute;
-    top: -110px;
-    right: 40px;
     border-radius: 6px;
+    border: solid 1px $gray-500;
     padding: 10px;
+    position: absolute;
+    right: 40px;
+    top: -110px;
 
     span {
-      font-weight: bold;
       color: $cyan-600;
+      font-weight: bold;
     }
   }
 
   &:hover {
-    background-color: $cyan-700;
+    background-color:$cyan-700;
   }
 }

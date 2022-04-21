@@ -44,6 +44,7 @@
 
   </div>
 
+  <script type="text/javascript" src="https://unpkg.com/imask"></script>
   <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

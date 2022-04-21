@@ -5,12 +5,12 @@
 @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons';
+@import '~bootstrap/scss/bootstrap';
 @import 'generateAllColors';
 
-// Login
+// Views
+@import 'footer';
+@import 'header';
 @import 'login';
-
-// Trabalhos
 @import 'trabalhos';
