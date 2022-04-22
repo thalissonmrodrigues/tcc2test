@@ -17,7 +17,7 @@ const btn_filter = document.querySelector('.btn-filter');
 const filter_area = document.querySelector('.filter-area');
 if(btn_filter && filter_area){
   btn_filter.addEventListener('click', function(e) {
-    var screen_width = window.screen.width;
+    let screen_width = window.screen.width;
 
     if(filter_area.classList.contains("d-none")) {
       // Show and then increase the size.
@@ -35,6 +35,39 @@ if(btn_filter && filter_area){
     }
   });
 }
+
+// Toggle click in room tabs.
+let tabs_room = document.querySelectorAll('.nav-tabs.room .nav-link');
+if(tabs_room) {
+  tabs_room.forEach(function(tabs){
+    // Add from event click tabs.
+    tabs.addEventListener('click', function(e) {
+      //Select tab clicked and tables.
+      let tab_active = tabs;
+      let tables = document.querySelectorAll('table');
+
+      if(tab_active && tables){
+        if(tab_active.getAttribute('data-page') === 'alunos'){
+          // Show students table and activates the student tab.
+          tables[0].classList.remove('d-none');
+          tabs_room[0].classList.add('active');
+          // Hide table from teachers.
+          tables[1].classList.add('d-none');
+          tabs_room[1].classList.remove('active');
+        }
+        else {
+          // Hide table from students.
+          tables[0].classList.add('d-none');
+          tabs_room[0].classList.remove('active');
+          // Show teachers table and activates the teachers tab.
+          tables[1].classList.remove('d-none');
+          tabs_room[1].classList.add('active');
+        }
+      }
+    });
+  });
+}
+
 
 /**
  * Function toggleClick() show or hide a certain element.
