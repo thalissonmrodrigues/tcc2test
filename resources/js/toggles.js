@@ -12,6 +12,14 @@ if(avatar && menu_avatar){
   toggleClick(avatar, menu_avatar);
 }
 
+// Toggle click in screen login.
+const info_icon = document.querySelector('.info-icon');
+const file_info = document.querySelector('.file-info');
+if(info_icon && file_info){
+  toggleClick(info_icon, file_info);
+}
+
+
 // Toggle click in filters.
 const btn_filter = document.querySelector('.btn-filter');
 const filter_area = document.querySelector('.filter-area');
@@ -40,7 +48,7 @@ if(btn_filter && filter_area){
 let tabs_room = document.querySelectorAll('.nav-tabs.room .nav-link');
 if(tabs_room) {
   tabs_room.forEach(function(tabs){
-    // Add from event click tabs.
+    // Add click event to tabs
     tabs.addEventListener('click', function(e) {
       //Select tab clicked and tables.
       let tab_active = tabs;
@@ -68,6 +76,26 @@ if(tabs_room) {
   });
 }
 
+// Toggle click in work cards.
+let btn_card_flip = document.querySelector('.btn-card-flip');
+if(btn_card_flip) {
+  btn_card_flip.addEventListener('click', function(e) {
+    let card = document.querySelector('.card');
+    let back = document.querySelector('.back');
+    card.classList.toggle('flip');
+    back.classList.toggle('d-none');
+    if(back.classList.contains('d-none')) {
+      document.querySelector('.btn-card-flip').innerHTML = "Enviar Trabalho";
+    }
+    else {
+      document.querySelector('.btn-card-flip').innerHTML = "Cancelar Envio";
+    }
+    // Clear inputs.
+    document.querySelector('form textarea').value = "";
+    document.querySelector('form input').value = "";
+    document.querySelector('.file-name').innerHTML = "";
+  })
+}
 
 /**
  * Function toggleClick() show or hide a certain element.
@@ -78,6 +106,5 @@ if(tabs_room) {
 function toggleClick(clicked, showAndHide) {
   clicked.addEventListener('click', function(e) {
     showAndHide.classList.toggle("d-none");
-    console.log('aa');
 });
 }

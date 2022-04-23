@@ -1,0 +1,18 @@
+.btn-outline-cyan {
+  border-color: $primary;
+  color: $primary;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+.btn-outline-gray {
+  border-color: $border-color;
+  color: $font-color;
+
+  &:hover {
+    background-color: $secondary-hover;
+  }
+}

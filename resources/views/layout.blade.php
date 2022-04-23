@@ -80,11 +80,11 @@
       {{-- Submenu actions --}}
       <div class="actions">
         {{-- Filter button --}}
-        <button type="button" class="btn-filter btn btn-outline">
+        <button type="button" class="btn-filter btn btn-outline-cyan">
           <i class="bi bi-funnel-fill"></i>
         </button>
         {{-- Add button --}}
-        <button type="button" class="btn-add btn btn-outline"> Adicionar Algo</button>
+        <button type="button" class="btn btn-add btn-outline-cyan"> Adicionar Algo</button>
       </div>
     </div>
   </div>
@@ -123,14 +123,14 @@
         </div>
 
         <div  class="col row">
-          <div class="col col-xl-3">
+          <div class="col">
             <ul class="nav flex-column">
               <li class="nav-item"><a href="{{ route('listagem.salas') }}" class="nav-link px-2">Salas</a></li>
               <li class="nav-item"><a href="{{ route('listagem.alunos') }}" class="nav-link px-2">Alunos</a></li>
             </ul>
           </div>
 
-          <div class="col col-xl-9">
+          <div class="col">
             <ul class="nav flex-column">
               <li class="nav-item"><a href="{{ route('listagem.professores') }}" class="nav-link px-2">Professores</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2">Configurações</a></li>

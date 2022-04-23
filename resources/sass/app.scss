@@ -1,16 +1,18 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
-@import 'variables';
-
 // Bootstrap
 @import '~bootstrap-icons/font/bootstrap-icons';
 @import '~bootstrap/scss/bootstrap';
-@import 'generateAllColors';
+
+// Variables
+@import 'variables/variables';
+@import 'variables/generateAllColors';
+@import 'variables/btn-custom';
 
 // Views
-@import 'footer';
-@import 'header';
-@import 'login';
-@import 'listing';
+@import 'layout/form/view-work.scss';
+@import 'layout/login';
+@import 'layout/partials/footer';
+@import 'layout/partials/header';
+@import 'listing/listing';

@@ -74,9 +74,9 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-operations btn-outline">Editar</a>
+                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
 
-                <button type="button" class="btn btn-operations btn-outline btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
@@ -92,9 +92,9 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-operations btn-outline">Editar</a>
+                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
 
-                <button type="button" class="btn btn-operations btn-outline btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
@@ -110,9 +110,9 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-operations btn-outline">Editar</a>
+                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
 
-                <button type="button" class="btn btn-operations btn-outline btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
@@ -128,9 +128,9 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-operations btn-outline">Editar</a>
+                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
 
-                <button type="button" class="btn btn-operations btn-outline btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
@@ -146,9 +146,9 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-operations btn-outline">Editar</a>
+                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
 
-                <button type="button" class="btn btn-operations btn-outline btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
@@ -164,9 +164,9 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-operations btn-outline">Editar</a>
+                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
 
-                <button type="button" class="btn btn-operations btn-outline btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
@@ -182,9 +182,9 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-operations btn-outline">Editar</a>
+                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
 
-                <button type="button" class="btn btn-operations btn-outline btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>

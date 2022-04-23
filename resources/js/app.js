@@ -4,6 +4,7 @@ require('./bootstrap');
 // IMask
 require('./IMask');
 
-//Login
+// All
 require('./toggles');
+require('./functions');
 
