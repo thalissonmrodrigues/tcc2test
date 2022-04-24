@@ -1,7 +1,3 @@
-html, body{
-  height: 100%;
-}
-
 .box-login {
   @include media-breakpoint-down(sm) {
     min-height: 100px;

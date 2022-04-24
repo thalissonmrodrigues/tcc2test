@@ -18033,6 +18033,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 .bg-blue {
   background-color: #0d6efd !important;
 }
@@ -19408,6 +19413,7 @@ textarea.form-control-lg {
 }
 .work-info-area .work-info p {
   margin: 15px 0;
+  color: #495057;
 }
 .work-info-area .work-info p span {
   color: #0aa2c0;
@@ -19452,9 +19458,25 @@ textarea.form-control-lg {
 }
 .work-info-area .card .face textarea {
   resize: none;
-  height: 150px;
+  height: 200px;
   color: #495057;
   background-color: #fff;
+}
+.work-info-area .card .face .files {
+  border: solid 1px #adb5bd;
+  border-radius: 6px;
+  height: 100px;
+  padding: 10px;
+  overflow: auto;
+}
+.work-info-area .card .face .files a {
+  color: #495057;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+}
+.work-info-area .card .face .files a:hover {
+  color: #0aa2c0;
 }
 .work-info-area .card .face.front {
   display: flex;
@@ -19462,21 +19484,15 @@ textarea.form-control-lg {
   justify-content: space-between;
   transform: rotateY(0deg);
 }
-.work-info-area .card .face.front .files {
-  border: solid 1px #adb5bd;
-  border-radius: 6px;
-  height: 100px;
-  padding: 10px;
-  overflow: auto;
-}
-.work-info-area .card .face.front .files a {
-  color: #495057;
+.work-info-area .card .face.back p > span {
   font-size: 14px;
-  text-decoration: none;
-  display: block;
+  font-weight: normal;
+  color: #ced4da;
 }
-.work-info-area .card .face.front .files a:hover {
-  color: #0aa2c0;
+.work-info-area .card .face.back .nota span {
+  font-size: 16px;
+  color: #495057;
+  margin-left: 10px;
 }
 .work-info-area .card .face.back form {
   min-height: 418px;
@@ -19512,6 +19528,12 @@ textarea.form-control-lg {
 }
 .work-info-area .card .face.back form .file-name {
   color: #495057;
+  max-height: 48px;
+  max-width: 53ch;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
 }
 .work-info-area .card .face.back form .btn-upload {
   padding: 0 40px;
@@ -19520,10 +19542,6 @@ textarea.form-control-lg {
 }
 .work-info-area .flip {
   transform: rotateY(360deg);
-}
-
-html, body {
-  height: 100%;
 }
 
 .box-login {

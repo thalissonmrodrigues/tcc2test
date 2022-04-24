@@ -12,7 +12,7 @@
 
     p {
       margin: 15px 0;
-      $color: $font-color;
+      color: $font-color;
 
       span {
         color: $primary;
@@ -63,9 +63,28 @@
 
       textarea {
         resize: none;
-        height: 150px;
+        height: 200px;
         color: $font-color;
         background-color: $white;
+      }
+
+      .files {
+        border: solid 1px $border-color;
+        border-radius: 6px;
+        height:100px;
+        padding: 10px;
+        overflow: auto;
+
+        a {
+          color: $font-color;
+          font-size: 14px;
+          text-decoration: none;
+          display: block;
+
+          &:hover {
+            color: $primary;
+          }
+        }
       }
 
       &.front {
@@ -73,28 +92,21 @@
         flex-direction: column;
         justify-content: space-between;
         transform: rotateY(0deg);
-
-        .files {
-          border: solid 1px $border-color;
-          border-radius: 6px;
-          height:100px;
-          padding: 10px;
-          overflow: auto;
-
-          a {
-            color: $font-color;
-            font-size: 14px;
-            text-decoration: none;
-            display: block;
-
-            &:hover {
-              color: $primary;
-            }
-          }
-        }
       }
 
       &.back {
+        p > span {
+            font-size: 14px;
+            font-weight: normal;
+            color: $gray-400;
+        }
+
+        .nota span {
+          font-size: 16px;
+          color: $font-color;
+          margin-left: 10px;
+        }
+
         form {
           min-height: 418px;
           display: flex;
@@ -134,6 +146,12 @@
 
           .file-name {
             color: $font-color;
+            max-height: 48px;
+            max-width: 53ch;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px;
           }
 
           .btn-upload {

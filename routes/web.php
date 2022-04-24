@@ -28,9 +28,17 @@ Route::get('/trabalhos', function () {
     return view('listing.trabalhos');
 })->name('listagem.trabalhos');
 
-Route::get('/trabalhos/{id}', function () {
+Route::get('/trabalhos/{trabalhos}', function () {
     return view('form.visualiza-trabalho');
 })->name('visualiza.trabalho');
+
+Route::get('/trabalhos/{trabalhos}/trabalho/{trabalho}/correcao', function () {
+    return view('form.correcao-trabalho');
+})->name('correcao.trabalho');
+
+Route::get('/trabalhos/{trabalhos}/tabalho/{trabalho}/visualiza', function () {
+    return view('form.visualiza-correcao');
+})->name('visualiza.correcao');
 
 // Subjects.
 Route::get('/materias', function () {

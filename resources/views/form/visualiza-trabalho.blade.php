@@ -17,6 +17,9 @@
       <button class="btn btn-card-flip w-75 my-3 m-auto">
         Enviar Trabalho
       </button>
+      <button class="btn btn-card-flip cancel w-75 my-3 m-auto d-none">
+        Cancelar Envio
+      </button>
     </div>
 
     <div class="card col-md-6">
@@ -35,8 +38,10 @@
 
       <div class="face back d-none">
         <form action="#" method="POST" enctype="multipart/form">
-          <p>Comentario <span>(opcional)</span></p>
-          <textarea class="form-control" name="body">Descrição do trabalho</textarea>
+          <label class="w-100">
+            <p>Comentario <span>(opcional)</span></p>
+            <textarea class="form-control" name="body">Descrição do trabalho</textarea>
+          </label>
 
           <p class="mb-0 mt-2">
             Selecionar Arquivo
@@ -45,7 +50,7 @@
           </p>
 
           <span class="d-flex align-items-center">
-            <input required class="input-file" type="file" name="file">
+            <input required class="input-file" type="file" name="file[]" multiple="multiple">
             <button type="button" class="btn-upload btn-outline-cyan btn"><i class="bi bi-cloud-arrow-up-fill"></i></button>
             <span class="ps-2 file-name"></span>
           </span>
@@ -56,6 +61,217 @@
 
     </div>
 
+    <div class="p-0">
+      {{-- Work menu tabs --}}
+      <ul class="nav nav-tabs mt-3">
+        <li class="nav-item">
+          <a class="nav-link active" data-page="recebidos">Recebidos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="corrigidos">Corrigidos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="enviado">Enviado - Aluno</a>
+        </li>
+      </ul>
 
+      <div class="row">
+        <div class="content table-responsive">
+          {{-- Recived listing --}}
+          <table class="table mt-3">
+            <thead>
+              <tr>
+                <th>RGM</th>
+                <th>Aluno</th>
+                <th>Email do Aluno</th>
+                <th>Operações</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('correcao.trabalho', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('correcao.trabalho', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('correcao.trabalho', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('correcao.trabalho', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('correcao.trabalho', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          {{-- Sent listing --}}
+          <table class="table mt-3 d-none">
+            <thead>
+              <tr>
+                <th>RGM</th>
+                <th>Aluno</th>
+                <th>Email do Aluno</th>
+                <th>Nota</th>
+                <th>Operações</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>1.5</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('visualiza.correcao', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>1.5</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('visualiza.correcao', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>1.5</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('visualiza.correcao', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>1.5</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('visualiza.correcao', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table mt-3 d-none">
+            <thead>
+              <tr>
+                <th>RGM</th>
+                <th>Aluno</th>
+                <th>Email do Aluno</th>
+                <th>Nota</th>
+                <th>Operações</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>1.5</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('visualiza.correcao', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>1.5</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('visualiza.correcao', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>1.5</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('visualiza.correcao', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>20727674</td>
+                <td>Thalisson Manso Rodrigues</td>
+                <td>thalissonrodrigues@test.com</td>
+                <td>1.5</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="{{ route('visualiza.correcao', ['trabalhos' => 1, 'trabalho' => 2]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 @endsection

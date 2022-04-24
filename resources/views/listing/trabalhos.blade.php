@@ -81,7 +81,7 @@
             <td>2.0</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('visualiza.trabalho', ['trabalhos' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -101,7 +101,7 @@
             <td>2.0</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('visualiza.trabalho', ['trabalhos' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -121,7 +121,7 @@
             <td>2.0</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('visualiza.trabalho', ['trabalhos' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -141,7 +141,7 @@
             <td>2.0</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('visualiza.trabalho', ['trabalhos' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -161,7 +161,7 @@
             <td>2.0</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('visualiza.trabalho', ['trabalhos' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -181,7 +181,7 @@
             <td>2.0</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('visualiza.trabalho', ['trabalhos' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">

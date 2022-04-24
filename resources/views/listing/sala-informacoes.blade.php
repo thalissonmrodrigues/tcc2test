@@ -2,7 +2,7 @@
 
 @section('content')
   {{-- Room menu tabs --}}
-  <ul class="nav nav-tabs room mt-3">
+  <ul class="nav nav-tabs mt-3">
     <li class="nav-item">
       <a class="nav-link active" data-page="alunos">Alunos</a>
     </li>

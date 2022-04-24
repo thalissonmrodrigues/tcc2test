@@ -6,5 +6,6 @@ require('./IMask');
 
 // All
 require('./toggles');
+require('./tabs');
 require('./functions');
 
