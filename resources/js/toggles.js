@@ -62,9 +62,15 @@ if(arra_btn_card_flip) {
         document.querySelector('.btn-card-flip').classList.add('d-none');
       }
       // Clear inputs.
-      document.querySelector('form textarea').value = "";
-      document.querySelector('form input').value = "";
-      document.querySelector('.file-name').innerHTML = "";
+      if (document.querySelector('form textarea')) {
+        document.querySelector('form textarea').value = "";
+      }
+      if(      document.querySelector('form input')) {
+        document.querySelector('form input').value = "";
+      }
+      if(document.querySelector('.file-name')) {
+        document.querySelector('.file-name').innerHTML = "";
+      }
     })
   })
 

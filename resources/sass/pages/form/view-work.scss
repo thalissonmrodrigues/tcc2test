@@ -114,6 +114,16 @@
           justify-content: space-between;
           align-items: flex-start;
 
+          button[type="submit"] > i {
+            margin-left: 10px;
+          }
+
+          .upload-area {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+
           p {
             position: relative;
 
@@ -145,9 +155,13 @@
           }
 
           .file-name {
+            @include media-breakpoint-down(sm) {
+              max-width: 35ch;
+            }
+
             color: $font-color;
             max-height: 48px;
-            max-width: 53ch;
+            max-width: 41ch;
             overflow-x: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -155,9 +169,17 @@
           }
 
           .btn-upload {
-            padding: 0 40px;
-            font-size: 30px;
-            display: block;
+            padding: 10px 15px;
+            max-height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 175px;
+
+            i {
+              font-size: 30px;
+              margin-left: 10px;
+            }
           }
         }
       }

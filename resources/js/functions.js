@@ -6,15 +6,8 @@ if(btn_upload) {
     // Add file name.
     input_file.addEventListener('change', function(e) {
       let file_name = document.querySelector('.file-name');
-      file_name.innerHTML = "";
-      for(let i = 0; i < input_file.files.length; i++) {
-        if(i < input_file.files.length-1) {
-          file_name.innerHTML += input_file.files[i].name + ', ';
-        }
-        else {
-          file_name.innerHTML += input_file.files[i].name;
-        }
-      }
+      let files_length = input_file.files.length-1;
+      file_name.innerHTML = input_file.files[0].name + ' e mais ' + files_length + ' arquivos';
     })
 
     input_file.click();

@@ -19501,6 +19501,14 @@ html, body {
   justify-content: space-between;
   align-items: flex-start;
 }
+.work-info-area .card .face.back form button[type=submit] > i {
+  margin-left: 10px;
+}
+.work-info-area .card .face.back form .upload-area {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .work-info-area .card .face.back form p {
   position: relative;
 }
@@ -19529,16 +19537,28 @@ html, body {
 .work-info-area .card .face.back form .file-name {
   color: #495057;
   max-height: 48px;
-  max-width: 53ch;
+  max-width: 41ch;
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 14px;
 }
+@media (max-width: 575.98px) {
+  .work-info-area .card .face.back form .file-name {
+    max-width: 35ch;
+  }
+}
 .work-info-area .card .face.back form .btn-upload {
-  padding: 0 40px;
+  padding: 10px 15px;
+  max-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 175px;
+}
+.work-info-area .card .face.back form .btn-upload i {
   font-size: 30px;
-  display: block;
+  margin-left: 10px;
 }
 .work-info-area .flip {
   transform: rotateY(360deg);

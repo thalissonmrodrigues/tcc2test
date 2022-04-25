@@ -37,9 +37,9 @@
 
       <div class="face back d-none">
         <form action="#" method="POST" enctype="multipart/form">
-          <label class="w-25">
+          <label class="">
             <p>Nota do Trabalho</p>
-            <input class="form-control" type="text" name="nota">
+            <input class="form-control w-50" id="nota" type="text" name="nota">
           </label>
 
           <label class="w-100">
@@ -47,20 +47,19 @@
             <textarea style="height: 150px;" class="form-control" name="body">Descrição do trabalho</textarea>
           </label>
 
-          <p class="mb-0">
-            Selecionar Arquivo
-            <i class="info-icon bi bi-info-circle-fill"></i>
-            <span>(opcional)</span>
-            <i class="d-none file-info alert alert-info">Tipos aceito: .pdf .docx .odt</i>
-          </p>
-
-          <span class="d-flex align-items-center">
+          <span class="upload-area">
             <input class="input-file" type="file" name="file[]" multiple="multiple">
-            <button type="button" class="btn-upload btn-outline-cyan btn"><i class="bi bi-cloud-arrow-up-fill"></i></button>
+            <button type="button" class="btn-upload btn-outline-cyan btn">
+              Selecionar Arquivo
+              <i class="bi bi-cloud-arrow-up-fill"></i>
+            </button>
             <span class="ps-2 file-name"></span>
           </span>
 
-          <button type="submit" class="btn btn-outline-cyan">Enviar Correção <i class="bi bi-send-fill"></i></button>
+          <button type="submit" class="btn btn-outline-cyan">
+            Enviar Correção
+            <i class="bi bi-send-fill"></i>
+          </button>
         </form>
       </div>
     </div>

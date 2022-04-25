@@ -9,3 +9,11 @@ if(document.getElementById('input-delivery-date')) {
   );
 }
 
+if(document.getElementById('nota')) {
+  IMask(
+    document.getElementById('nota'),
+    {
+      mask:'0.00'
+    }
+  );
+}
