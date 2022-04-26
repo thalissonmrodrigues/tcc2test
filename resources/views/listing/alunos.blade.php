@@ -1,10 +1,17 @@
 @extends('layout')
 
+@php
+  $active_menu_header = 'alunos';
+@endphp
+
 @section('cta_route')
   {{ route('adiciona.alunos')}}
 @endsection
 @section('cta_btn', 'Adicionar Aluno')
 @section('title_page', 'Listagem de Alunos')
+@section('icon_title')
+  <i class="fa-solid fa-people-group"></i>
+@endsection
 
 @section('content')
   <div class="row content-area">

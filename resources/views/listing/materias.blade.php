@@ -1,10 +1,17 @@
 @extends('layout')
 
+@php
+  $active_menu_header = 'materias';
+@endphp
+
 @section('cta_route')
   {{ route('adiciona.materias')}}
 @endsection
 @section('cta_btn', 'Adicionar Matéria')
 @section('title_page', 'Listagem de Matérias')
+@section('icon_title')
+  <i class="fa-solid fa-book"></i>
+@endsection
 
 @section('content')
   <div class="row content-area">

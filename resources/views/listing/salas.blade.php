@@ -1,10 +1,17 @@
 @extends('layout')
 
+@php
+  $active_menu_header = 'salas';
+@endphp
+
 @section('cta_route')
   {{ route('adiciona.salas')}}
 @endsection
 @section('cta_btn', 'Adicionar Sala')
 @section('title_page', 'Listagem de Salas')
+@section('icon_title')
+  <i class="fa-solid fa-school"></i>
+@endsection
 
 @section('content')
   <div class="row content-area">

@@ -1,6 +1,13 @@
 @extends('layout')
 
+@php
+  $active_menu_header = 'salas';
+@endphp
+
 @section('title_page', 'Adicionar Sala')
+@section('icon_title')
+  <i class="fa-solid fa-school"></i>
+@endsection
 
 @section('content')
   <form action="#" method="POST" class="row g-3 my-2 mx-auto form-adiciona">

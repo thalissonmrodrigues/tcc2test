@@ -4,10 +4,14 @@
   $serie = '8';
   $sigla = 'A';
   $periodo = 'Tarde';
+  $active_menu_header = 'salas';
 @endphp
 
 @section('title_page')
   {{ $serie . 'º ' . $sigla . ' - ' . $periodo }}
+@endsection
+@section('icon_title')
+  <i class="fa-solid fa-school"></i>
 @endsection
 
 {{-- apenas adm e prof --}}

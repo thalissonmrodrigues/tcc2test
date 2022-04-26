@@ -14,7 +14,7 @@
       <nav class="navbar navbar-expand-lg w-100">
         <div class="container-fluid p-0">
           {{-- Logo --}}
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="{{ route('home') }}">
             <img src="{{ asset('img/logo-nsa.png') }}" alt="logo" width="70">
           </a>
           {{-- Mobile menu button --}}
@@ -25,12 +25,12 @@
           {{-- Menu links --}}
           <div class="collapse navbar-collapse" id="menu-header">
             <div class="navbar-nav">
-              <a class="nav-link active" href="{{ route('home') }}">Home</a>
-              <a class="nav-link" href="{{ route('listagem.trabalhos') }}">Trabalhos</a>
-              <a class="nav-link" href="{{ route('listagem.materias') }}">Materias</a>
-              <a class="nav-link" href="{{ route('listagem.professores') }}">Professores</a>
-              <a class="nav-link" href="{{ route('listagem.alunos') }}">Alunos</a>
-              <a class="nav-link" href="{{ route('listagem.salas') }}">Salas</a>
+              <a class="nav-link @if ($active_menu_header == 'home') active @endif" href="{{ route('home') }}">Início</a>
+              <a class="nav-link @if ($active_menu_header == 'trabalhos') active @endif" href="{{ route('listagem.trabalhos') }}">Trabalhos</a>
+              <a class="nav-link @if ($active_menu_header == 'materias') active @endif" href="{{ route('listagem.materias') }}">Materias</a>
+              <a class="nav-link @if ($active_menu_header == 'professores') active @endif" href="{{ route('listagem.professores') }}">Professores</a>
+              <a class="nav-link @if ($active_menu_header == 'alunos') active @endif" href="{{ route('listagem.alunos') }}">Alunos</a>
+              <a class="nav-link @if ($active_menu_header == 'salas') active @endif" href="{{ route('listagem.salas') }}">Salas</a>
               <a class="nav-link disabled" disabled href="#">Notas</a>
               <a class="nav-link config" href="#">Configurações</a>
               <a class="nav-link logout" href="#">Sair</a>
@@ -68,7 +68,7 @@
       <div class="d-flex align-items-center">
         {{-- Submneu icon --}}
         <div class="icon-area">
-          <i class="bi bi-journals"></i>
+          @yield('icon_title')
         </div>
         {{-- Submenu title --}}
         <div class="title">
@@ -100,7 +100,7 @@
       <p class="col-md-4 col-12 mb-0 text-muted">&copy; 2022 NSA on-line, Inc</p>
 
       {{-- Footer icon --}}
-      <a href="#" class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-md-0 me-md-auto link-dark text-decoration-none">
+      <a href="{{ route('home') }}" class="col-md-4 col-12 d-flex align-items-center justify-content-center mb-md-0 me-md-auto link-dark text-decoration-none">
         <img src="{{ asset('img/logo-nsa.png') }}" alt="logo" width="70">
       </a>
 
@@ -109,7 +109,7 @@
         <div class="col row">
           <div class="col">
             <ul class="nav flex-column">
-              <li class="nav-item"><a href="{{ route('home') }}" class="nav-link px-2">Home</a></li>
+              <li class="nav-item"><a href="{{ route('home') }}" class="nav-link px-2">Início</a></li>
               <li class="nav-item"><a href="{{ route('listagem.trabalhos') }}" class="nav-link px-2">Trabalhos</a></li>
             </ul>
           </div>

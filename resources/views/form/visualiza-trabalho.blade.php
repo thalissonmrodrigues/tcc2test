@@ -1,10 +1,17 @@
 @extends('layout')
 
+@php
+  $active_menu_header = 'trabalhos';
+@endphp
+
 @section('title_page', 'Trabalho')
 @section('cta_route')
   {{ route('listagem.trabalhos')}}
 @endsection
 @section('cta_btn', 'Voltar')
+@section('icon_title')
+  <i class="fa-solid fa-file"></i>
+@endsection
 
 @section('content')
   <div class="work-info-area d-flex justify-content-between row my-3">

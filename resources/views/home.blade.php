@@ -1,17 +1,22 @@
 @extends('layout')
+@php
+  $active_menu_header = 'home';
+@endphp
 
-@section('title_page', 'Home')
+@section('title_page', 'Início')
+@section('icon_title')
+  <i class="fa-solid fa-house"></i>
+@endsection
+
 
 @section('content')
-  <div class=" content-area row">
-    <div class="col-md-12 display-5">NSA On-line</div>
-    <div class="bg-danger col-md-3">home</div>
-    <div class="bg-info col-md-6">trabalhos</div>
-    <div class='bg-warning col-md-3'>materias</div>
-    <div class="bg-cyan col-md-4">professores</div>
-    <div class="bg-red col-md-4">alunos</div>
-    <div class="bg-gray-500 col-md-4">Salas</div>
-    <div class="col-md-6">notas</div>
-    <div class="bg-purple col-md-6">Configurações</div>
+  <div class=" content-area home-page row">
+    <div class="bg-indigo-100 blue col-md-5"><a href="{{ route('listagem.trabalhos') }}">Trabalhos <i class="fa-solid fa-file"></i></a></div>
+    <div class='bg-green-100 col-md-5'><a href="{{ route('listagem.materias') }}">Materias <i class="fa-solid fa-book"></i></a></div>
+    <div class="bg-gray-300 col-md-5"><a href="{{ route('listagem.professores') }}">Professores <i class="fa-solid fa-graduation-cap"></i></a></div>
+    <div class="bg-blue-200 col-md-5"><a href="{{ route('listagem.alunos') }}">Alunos <i class="fa-solid fa-people-group"></i></a></div>
+    <div class="bg-yellow-200 col-md-5"><a href="{{ route('listagem.salas') }}">Salas <i class="fa-solid fa-school"></i></a></div>
+    <div class="bg-red-200 col-md-5 disabled"><a>Notas <i class="fa-solid fa-chart-column"></i></a></div>
+    <div class="bg-purple-200 col-md-5"><a href="#">Configurações <i class="fa-solid fa-gear"></i></a></div>
   </div>
 @endsection

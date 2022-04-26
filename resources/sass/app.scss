@@ -5,12 +5,19 @@
 @import '~bootstrap-icons/font/bootstrap-icons';
 @import '~bootstrap/scss/bootstrap';
 
+//FontAwesome
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
 // Variables
 @import 'variables/variables';
 @import 'variables/generateAllColors';
 @import 'variables/btn-custom';
 
 // Views
+@import 'pages/home';
 @import 'pages/form/view-work';
 @import 'pages/form/form-add';
 @import 'pages/login';

@@ -1,11 +1,15 @@
 @extends('layout')
 
 @php
-  $nome_do_trabalho = 'Trabalho de Conclusão de Curso'
+  $nome_do_trabalho = 'Trabalho de Conclusão de Curso';
+  $active_menu_header = 'trabalhos';
 @endphp
 
 @section('title_page')
   Trabalho - {{ $nome_do_trabalho }}
+@endsection
+@section('icon_title')
+  <i class="fa-solid fa-file"></i>
 @endsection
 @section('cta_route')
   {{ route('visualiza.trabalho', ['trabalhos' => 1])}}

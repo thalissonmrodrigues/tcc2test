@@ -1,10 +1,17 @@
 @extends('layout')
 
+@php
+  $active_menu_header = 'professores';
+@endphp
+
 @section('cta_route')
   {{ route('adiciona.professores')}}
 @endsection
 @section('cta_btn', 'Adicionar Professor')
 @section('title_page', 'Listagem de Professores')
+@section('icon_title')
+  <i class="fa-solid fa-graduation-cap"></i>
+@endsection
 
 @section('content')
   <div class="row content-area">

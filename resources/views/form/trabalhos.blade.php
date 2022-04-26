@@ -1,6 +1,13 @@
 @extends('layout')
 
+@php
+  $active_menu_header = 'trabalhos';
+@endphp
+
 @section('title_page', 'Adicionar Trabalho')
+@section('icon_title')
+  <i class="fa-solid fa-file"></i>
+@endsection
 
 @section('content')
   <form action="#" method="POST" class="row g-3 my-2 form-adiciona">

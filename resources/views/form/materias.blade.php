@@ -1,6 +1,13 @@
 @extends('layout')
 
+@php
+  $active_menu_header = 'materias';
+@endphp
+
 @section('title_page', 'Adicionar Matéria')
+@section('icon_title')
+  <i class="fa-solid fa-book"></i>
+@endsection
 
 @section('content')
   <form action="#" method="POST" class="row g-3 my-2 mx-auto form-adiciona">

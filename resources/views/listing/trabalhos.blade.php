@@ -1,10 +1,18 @@
 @extends('layout')
 
+@php
+  $active_menu_header = 'trabalhos';
+@endphp
+
 @section('cta_route')
   {{ route('adiciona.trabalhos')}}
 @endsection
 @section('cta_btn', 'Adicionar Trabalho')
 @section('title_page', 'Listagem de Trabalhos')
+@section('icon_title')
+  <i class="fa-solid fa-file"></i>
+@endsection
+@section('active_menu_header', 'trabalhos')
 
 @section('content')
   <div class="row content-area">
