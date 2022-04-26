@@ -28,6 +28,10 @@ Route::get('/trabalhos', function () {
     return view('listing.trabalhos');
 })->name('listagem.trabalhos');
 
+Route::get('/trabalhos/adiciona', function () {
+    return view('form.trabalhos');
+})->name('adiciona.trabalhos');
+
 Route::get('/trabalhos/{trabalhos}', function () {
     return view('form.visualiza-trabalho');
 })->name('visualiza.trabalho');
@@ -45,15 +49,27 @@ Route::get('/materias', function () {
     return view('listing.materias');
 })->name('listagem.materias');
 
+Route::get('/materias/adiciona', function () {
+    return view('form.materias');
+})->name('adiciona.materias');
+
 // Teachers.
 Route::get('/professores', function () {
     return view('listing.professores');
 })->name('listagem.professores');
 
+Route::get('/professores/adiciona', function () {
+    return view('form.professores');
+})->name('adiciona.professores');
+
 // Students.
 Route::get('/alunos', function () {
     return view('listing.alunos');
 })->name('listagem.alunos');
+
+Route::get('/alunos/adiciona', function () {
+    return view('form.alunos');
+})->name('adiciona.alunos');
 
 // Rooms.
 Route::get('/salas', function () {
@@ -63,3 +79,8 @@ Route::get('/salas', function () {
 Route::get('/salas/{id}/informacoes', function () {
     return view('listing.sala-informacoes');
 })->name('listagem.sala.informacoes');
+
+Route::get('/salas/adiciona', function () {
+    return view('form.salas');
+})->name('adiciona.salas');
+

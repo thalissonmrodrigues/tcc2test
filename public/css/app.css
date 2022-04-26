@@ -19399,6 +19399,20 @@ html, body {
   background-color: #dee2e6;
 }
 
+.btn-custom {
+  color: #fff;
+  background-color: #0aa2c0;
+}
+.btn-custom:hover {
+  color: #fff;
+  background-color: #087990;
+}
+
+.form-check-input:checked {
+  background-color: #0aa2c0;
+  border-color: #0aa2c0;
+}
+
 .work-info-area {
   min-height: 450px;
   padding: 0 12px;
@@ -19562,6 +19576,22 @@ html, body {
 }
 .work-info-area .flip {
   transform: rotateY(360deg);
+}
+
+.form-adiciona {
+  min-height: 50vh;
+  color: #495057;
+}
+.form-adiciona label {
+  font-weight: bold;
+  color: #0aa2c0;
+}
+.form-adiciona textarea {
+  resize: none;
+  height: 150px;
+}
+.form-adiciona input[type=file] {
+  max-width: 400px;
 }
 
 .box-login {
@@ -19906,7 +19936,7 @@ header {
 }
 
 .content-area {
-  min-height: 70vh;
+  min-height: 50vh;
   position: relative;
 }
 

@@ -1,5 +1,21 @@
 @extends('layout')
 
+@php
+  $serie = '8';
+  $sigla = 'A';
+  $periodo = 'Tarde';
+@endphp
+
+@section('title_page')
+  {{ $serie . 'º ' . $sigla . ' - ' . $periodo }}
+@endsection
+
+{{-- apenas adm e prof --}}
+@section('cta_route')
+  {{ route('listagem.salas')}}
+@endsection
+@section('cta_btn', 'Voltar')
+
 @section('content')
   {{-- Room menu tabs --}}
   <ul class="nav nav-tabs mt-3">

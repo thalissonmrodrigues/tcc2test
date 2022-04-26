@@ -1,5 +1,11 @@
 @extends('layout')
 
+@section('cta_route')
+  {{ route('adiciona.professores')}}
+@endsection
+@section('cta_btn', 'Adicionar Professor')
+@section('title_page', 'Listagem de Professores')
+
 @section('content')
   <div class="row content-area">
     {{-- Filters area --}}

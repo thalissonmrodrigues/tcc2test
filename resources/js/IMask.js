@@ -13,7 +13,7 @@ if(document.getElementById('nota')) {
   IMask(
     document.getElementById('nota'),
     {
-      mask:'0.00'
+      mask:'0.00',
     }
   );
 }

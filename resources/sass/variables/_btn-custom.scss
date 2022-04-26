@@ -16,3 +16,18 @@
     background-color: $secondary-hover;
   }
 }
+
+.btn-custom {
+  color: $white;
+  background-color: $primary;
+
+  &:hover {
+    color: $white;
+    background-color: $primary-hover;
+  }
+}
+
+.form-check-input:checked  {
+  background-color: $primary;
+  border-color: $primary;
+}

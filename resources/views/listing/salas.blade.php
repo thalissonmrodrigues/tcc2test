@@ -1,5 +1,11 @@
 @extends('layout')
 
+@section('cta_route')
+  {{ route('adiciona.salas')}}
+@endsection
+@section('cta_btn', 'Adicionar Sala')
+@section('title_page', 'Listagem de Salas')
+
 @section('content')
   <div class="row content-area">
     {{-- Filters area --}}

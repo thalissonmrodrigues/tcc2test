@@ -25,7 +25,7 @@
           {{-- Menu links --}}
           <div class="collapse navbar-collapse" id="menu-header">
             <div class="navbar-nav">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="{{ route('home') }}">Home</a>
               <a class="nav-link" href="{{ route('listagem.trabalhos') }}">Trabalhos</a>
               <a class="nav-link" href="{{ route('listagem.materias') }}">Materias</a>
               <a class="nav-link" href="{{ route('listagem.professores') }}">Professores</a>
@@ -73,7 +73,7 @@
         {{-- Submenu title --}}
         <div class="title">
           <span>ADMINISTRAÇÃO</span>
-          <span>Title</span>
+          <span>@yield('title_page')</span>
         </div>
       </div>
 
@@ -84,7 +84,7 @@
           <i class="bi bi-funnel-fill"></i>
         </button>
         {{-- Add button --}}
-        <button type="button" class="btn btn-add btn-outline-cyan"> Adicionar Algo</button>
+        <a href="@yield('cta_route')" class="btn btn-add btn-outline-cyan">@yield('cta_btn')</a>
       </div>
     </div>
   </div>
@@ -109,7 +109,7 @@
         <div class="col row">
           <div class="col">
             <ul class="nav flex-column">
-              <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+              <li class="nav-item"><a href="{{ route('home') }}" class="nav-link px-2">Home</a></li>
               <li class="nav-item"><a href="{{ route('listagem.trabalhos') }}" class="nav-link px-2">Trabalhos</a></li>
             </ul>
           </div>

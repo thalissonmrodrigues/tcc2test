@@ -1,5 +1,11 @@
 @extends('layout')
 
+@section('cta_route')
+  {{ route('adiciona.materias')}}
+@endsection
+@section('cta_btn', 'Adicionar Matéria')
+@section('title_page', 'Listagem de Matérias')
+
 @section('content')
   <div class="row content-area">
     {{-- Filters area --}}

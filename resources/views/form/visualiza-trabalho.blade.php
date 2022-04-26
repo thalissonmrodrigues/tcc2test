@@ -1,5 +1,11 @@
 @extends('layout')
 
+@section('title_page', 'Trabalho')
+@section('cta_route')
+  {{ route('listagem.trabalhos')}}
+@endsection
+@section('cta_btn', 'Voltar')
+
 @section('content')
   <div class="work-info-area d-flex justify-content-between row my-3">
     <div class="work-info col-md-5">
