@@ -3,11 +3,17 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 15px;
 
   div {
+    @include media-breakpoint-down(lg) {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+
     margin: 30px 0;
     height: 150px;
-    font-size: 50px;
+    font-size: 40px;
     box-sizing: border-box;
     border-radius: 6px;
     transition: all .5s;

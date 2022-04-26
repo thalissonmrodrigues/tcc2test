@@ -29694,14 +29694,21 @@ html, body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 15px;
 }
 .home-page div {
   margin: 30px 0;
   height: 150px;
-  font-size: 50px;
+  font-size: 40px;
   box-sizing: border-box;
   border-radius: 6px;
   transition: all 0.5s;
+}
+@media (max-width: 991.98px) {
+  .home-page div {
+    font-size: 30px;
+    margin: 10px 0;
+  }
 }
 .home-page div a {
   display: flex;
