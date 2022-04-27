@@ -1,9 +1,5 @@
+{{-- Layout Settings  --}}
 @extends('layout')
-
-@php
-  $nome_do_trabalho = 'Trabalho de Conclusão de Curso';
-  $active_menu_header = 'trabalhos';
-@endphp
 
 @section('title_page')
   Trabalho - {{ $nome_do_trabalho }}
@@ -16,6 +12,7 @@
 @endsection
 @section('cta_btn', 'Voltar')
 
+{{-- Page Content --}}
 @section('content')
   {{-- Card Fixed --}}
   <div class="work-info-area d-flex justify-content-between row my-3">

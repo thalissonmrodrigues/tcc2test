@@ -1,9 +1,5 @@
+{{-- Layout Settings  --}}
 @extends('layout')
-
-@php
-  $active_menu_header = 'salas';
-  $variavel_dados_temporaria = FALSE;
-@endphp
 
 @section('title_page')
   @if ($variavel_dados_temporaria)
@@ -17,6 +13,7 @@
   <i class="fa-solid fa-school"></i>
 @endsection
 
+{{-- Page Content --}}
 @section('content')
   <form action="#" method="POST" class="row g-3 my-2 mx-auto form-add-edit">
     <div class="col-md-12 ps-0">

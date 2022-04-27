@@ -1,8 +1,5 @@
+{{-- Layout Settings  --}}
 @extends('layout')
-
-@php
-  $active_menu_header = 'trabalhos';
-@endphp
 
 @section('title_page', 'Trabalho')
 @section('cta_route')
@@ -13,6 +10,7 @@
   <i class="fa-solid fa-file"></i>
 @endsection
 
+{{-- Page Content --}}
 @section('content')
   <div class="work-info-area d-flex justify-content-between row my-3">
     {{-- Card Fixed --}}

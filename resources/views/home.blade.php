@@ -1,13 +1,12 @@
+{{-- Layout Settings  --}}
 @extends('layout')
-@php
-  $active_menu_header = 'home';
-@endphp
 
 @section('title_page', 'Início')
 @section('icon_title')
   <i class="fa-solid fa-house"></i>
 @endsection
 
+{{-- Page Content --}}
 @section('content')
   <div class=" content-area home-page row">
     <div class="bg-indigo-100 blue col-md-5"><a href="{{ route('listagem.trabalhos') }}">Trabalhos <i class="fa-solid fa-file"></i></a></div>

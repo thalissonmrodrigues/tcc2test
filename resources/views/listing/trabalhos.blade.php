@@ -1,8 +1,5 @@
+{{-- Layout Settings  --}}
 @extends('layout')
-
-@php
-  $active_menu_header = 'trabalhos';
-@endphp
 
 @section('cta_route')
   {{ route('adiciona.trabalhos')}}
@@ -14,6 +11,7 @@
 @endsection
 @section('active_menu_header', 'trabalhos')
 
+{{-- Page Content --}}
 @section('content')
   <div class="row content-area">
     {{-- Filters area --}}

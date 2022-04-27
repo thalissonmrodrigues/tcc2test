@@ -1,11 +1,5 @@
+{{-- Layout Settings  --}}
 @extends('layout')
-
-@php
-  $serie = '8';
-  $sigla = 'A';
-  $periodo = 'Tarde';
-  $active_menu_header = 'salas';
-@endphp
 
 @section('title_page')
   {{ $serie . 'º ' . $sigla . ' - ' . $periodo }}
@@ -20,6 +14,7 @@
 @endsection
 @section('cta_btn', 'Voltar')
 
+{{-- Page Content --}}
 @section('content')
   {{-- Room menu tabs --}}
   <ul class="nav nav-tabs mt-3">

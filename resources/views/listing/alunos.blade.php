@@ -1,8 +1,5 @@
+{{-- Layout Settings  --}}
 @extends('layout')
-
-@php
-  $active_menu_header = 'alunos';
-@endphp
 
 @section('cta_route')
   {{ route('adiciona.alunos')}}
@@ -13,6 +10,7 @@
   <i class="fa-solid fa-people-group"></i>
 @endsection
 
+{{-- Page Content --}}
 @section('content')
   <div class="row content-area">
     {{-- Filters area --}}

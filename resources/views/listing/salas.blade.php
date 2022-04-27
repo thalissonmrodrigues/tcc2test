@@ -1,8 +1,5 @@
+{{-- Layout Settings  --}}
 @extends('layout')
-
-@php
-  $active_menu_header = 'salas';
-@endphp
 
 @section('cta_route')
   {{ route('adiciona.salas')}}
@@ -13,6 +10,7 @@
   <i class="fa-solid fa-school"></i>
 @endsection
 
+{{-- Page Content --}}
 @section('content')
   <div class="row content-area">
     {{-- Filters area --}}

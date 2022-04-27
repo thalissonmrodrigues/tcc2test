@@ -1,17 +1,13 @@
+{{-- Layout Settings  --}}
 @extends('layout')
 
-@php
-  $active_menu_header = 'configurações';
-  $permissão = TRUE;
-@endphp
-
 @section('title_page', 'Configurações')
-
 
 @section('icon_title')
   <i class="fa-solid fa-gear"></i>
 @endsection
 
+{{-- Page Content --}}
 @section('content')
   <form action="#" method="POST" class="row g-3 my-2 form-add-edit config">
     @if($permissão)
