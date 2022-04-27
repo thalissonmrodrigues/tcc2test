@@ -18,7 +18,7 @@
 @endsection
 
 @section('content')
-  <form action="#" method="POST" class="row g-3 my-2 form-adiciona">
+  <form action="#" method="POST" class="row g-3 my-2 form-add-edit">
     <div class="col-md-6 ps-0">
       <label class="form-label w-100">
         Nome

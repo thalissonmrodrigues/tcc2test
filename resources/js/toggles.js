@@ -48,11 +48,16 @@ if(btn_filter && filter_area){
 let arra_btn_card_flip = document.querySelectorAll('.btn-card-flip');
 if(arra_btn_card_flip) {
   arra_btn_card_flip.forEach(function(btn_card_flip) {
+    // Add click event.
     btn_card_flip.addEventListener('click', function(e) {
       let card = document.querySelector('.card');
       let back = document.querySelector('.back');
+
+      // Rotation effect.
       card.classList.toggle('flip');
       back.classList.toggle('d-none');
+
+      // Show or Hide btn-card-flip.
       if(back.classList.contains('d-none')) {
         document.querySelector('.btn-card-flip.cancel').classList.add('d-none');
         document.querySelector('.btn-card-flip').classList.remove('d-none');
@@ -61,6 +66,7 @@ if(arra_btn_card_flip) {
         document.querySelector('.btn-card-flip.cancel').classList.remove('d-none');
         document.querySelector('.btn-card-flip').classList.add('d-none');
       }
+
       // Clear inputs.
       if (document.querySelector('form textarea')) {
         document.querySelector('form textarea').value = "";
