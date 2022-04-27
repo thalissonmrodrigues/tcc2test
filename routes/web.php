@@ -23,6 +23,11 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+// Settings
+Route::get('/{user}/config', function () {
+    return view('form.configuracoes');
+})->name('configurações');
+
 // Works.
 Route::get('/trabalhos', function () {
     return view('listing.trabalhos');
@@ -31,6 +36,10 @@ Route::get('/trabalhos', function () {
 Route::get('/trabalhos/adiciona', function () {
     return view('form.trabalhos');
 })->name('adiciona.trabalhos');
+
+Route::get('/trabalhos/{trabalhos}/editar', function () {
+    return view('form.trabalhos');
+})->name('editar.trabalhos');
 
 Route::get('/trabalhos/{trabalhos}', function () {
     return view('form.visualiza-trabalho');
@@ -53,6 +62,10 @@ Route::get('/materias/adiciona', function () {
     return view('form.materias');
 })->name('adiciona.materias');
 
+Route::get('/materias/{materia}/editar', function () {
+    return view('form.materias');
+})->name('editar.materias');
+
 // Teachers.
 Route::get('/professores', function () {
     return view('listing.professores');
@@ -61,6 +74,10 @@ Route::get('/professores', function () {
 Route::get('/professores/adiciona', function () {
     return view('form.professores');
 })->name('adiciona.professores');
+
+Route::get('/professores/{professor}/editar', function () {
+    return view('form.professores');
+})->name('editar.professores');
 
 // Students.
 Route::get('/alunos', function () {
@@ -71,16 +88,24 @@ Route::get('/alunos/adiciona', function () {
     return view('form.alunos');
 })->name('adiciona.alunos');
 
+Route::get('/alunos/{aluno}/editar', function () {
+    return view('form.alunos');
+})->name('editar.alunos');
+
 // Rooms.
 Route::get('/salas', function () {
     return view('listing.salas');
 })->name('listagem.salas');
 
-Route::get('/salas/{id}/informacoes', function () {
+Route::get('/salas/{sala}/informacoes', function () {
     return view('listing.sala-informacoes');
 })->name('listagem.sala.informacoes');
 
 Route::get('/salas/adiciona', function () {
     return view('form.salas');
 })->name('adiciona.salas');
+
+Route::get('/salas/{sala}/editar', function () {
+    return view('form.salas');
+})->name('editar.salas');
 

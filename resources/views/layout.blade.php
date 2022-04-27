@@ -32,7 +32,7 @@
               <a class="nav-link @if ($active_menu_header == 'alunos') active @endif" href="{{ route('listagem.alunos') }}">Alunos</a>
               <a class="nav-link @if ($active_menu_header == 'salas') active @endif" href="{{ route('listagem.salas') }}">Salas</a>
               <a class="nav-link disabled" disabled href="#">Notas</a>
-              <a class="nav-link config" href="#">Configurações</a>
+              <a class="nav-link config @if ($active_menu_header == 'configurações') active @endif" href="{{ route('configurações', ['user' => 1]) }}">Configurações</a>
               <a class="nav-link logout" href="#">Sair</a>
             </div>
           </div>
@@ -53,7 +53,7 @@
 
           {{-- Avatar menu --}}
           <div class="menu-avatar d-none">
-            <a href="#">Configurações</a>
+            <a href="{{ route('configurações', ['user' => 1]) }}">Configurações</a>
             <a class="logout" href="#">Sair</a>
           </div>
         </div>
@@ -133,7 +133,7 @@
           <div class="col">
             <ul class="nav flex-column">
               <li class="nav-item"><a href="{{ route('listagem.professores') }}" class="nav-link px-2">Professores</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2">Configurações</a></li>
+              <li class="nav-item"><a href="{{ route('configurações', ['user' => 1]) }}" class="nav-link px-2">Configurações</a></li>
             </ul>
           </div>
         </div>

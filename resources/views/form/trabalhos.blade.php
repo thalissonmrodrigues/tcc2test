@@ -2,9 +2,17 @@
 
 @php
   $active_menu_header = 'trabalhos';
+  $variavel_dados_temporaria = FALSE;
 @endphp
 
-@section('title_page', 'Adicionar Trabalho')
+@section('title_page')
+  @if ($variavel_dados_temporaria)
+    Editar Trabalho
+  @else
+    Adicionar Trabalho
+  @endif
+@endsection
+
 @section('icon_title')
   <i class="fa-solid fa-file"></i>
 @endsection
@@ -14,30 +22,31 @@
     <div class="col-md-6 ps-0">
       <label class="form-label w-100">
         Nome
-        <input required type="text" class="form-control">
+        <input required type="text" class="form-control" value="@if ($variavel_dados_temporaria) Alguma Coisa @endif">
       </label>
     </div>
 
     <div class="col-md-4 ps-0">
       <label class="form-label w-100">
         Data de entrega
-        <input required type="text" class="form-control" id="input-delivery-date">
+        <input required type="text" class="form-control" id="input-delivery-date" value="@if ($variavel_dados_temporaria) 20/10/2022 @endif">
       </label>
     </div>
 
     <div class="col-md-2 ps-0">
       <label class="form-label w-100">
         Pontos
-        <input required type="text" class="form-control" id="nota">
+        <input required type="text" class="form-control" id="nota" value="@if ($variavel_dados_temporaria) 1.50 @endif">
       </label>
     </div>
 
     <div class="col-md-12 ps-0">
       <label class="form-label w-100">
         Descrição
-        <textarea class="form-control"></textarea>
+        <textarea class="form-control">@if ($variavel_dados_temporaria) Alguma Coisa @endif</textarea>
       </label>
     </div>
+
 
     <div class="col-md-3 ps-0">
       <label class="form-label">
@@ -92,7 +101,7 @@
     </div>
 
     <div class="col-12 ps-0">
-      <button type="submit" class="btn btn-custom">Adicionar</button>
+      <button type="submit" class="btn btn-custom">@if ($variavel_dados_temporaria) Salvar @else Adicionar @endif</button>
       <a href="{{ route('listagem.trabalhos') }}" class="btn">cancelar</a>
     </div>
   </form>

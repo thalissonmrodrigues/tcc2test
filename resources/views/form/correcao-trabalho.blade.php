@@ -18,6 +18,7 @@
 
 @section('content')
   <div class="work-info-area d-flex justify-content-between row my-3">
+    {{-- Card Fixed --}}
     <div class="work-info col-md-5">
       <div class="row">
         <p><span>Aluno: </span>Thalisson Manso Rodrigues</p>
@@ -37,8 +38,8 @@
       </button>
     </div>
 
+    {{-- Card Flipping --}}
     <div class="card col-md-6">
-
       <div class="face front">
         <p>Comentario</p>
         <textarea disabled class="form-control">Comentario</textarea>

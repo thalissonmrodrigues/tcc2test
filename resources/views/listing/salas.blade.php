@@ -85,11 +85,11 @@
             <td>Thalisson Manso Rodrigues</td>
             <td>
               <div class="btn-group">
-                <a href="{{ route('listagem.sala.informacoes', ['id' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('listagem.sala.informacoes', ['sala' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.salas', ['sala' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -103,11 +103,11 @@
             <td>Thalisson Manso Rodrigues</td>
             <td>
               <div class="btn-group">
-                <a href="{{ route('listagem.sala.informacoes', ['id' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('listagem.sala.informacoes', ['sala' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.salas', ['sala' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -121,11 +121,11 @@
             <td>Thalisson Manso Rodrigues</td>
             <td>
               <div class="btn-group">
-                <a href="{{ route('listagem.sala.informacoes', ['id' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('listagem.sala.informacoes', ['sala' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.salas', ['sala' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -139,11 +139,11 @@
             <td>Thalisson Manso Rodrigues</td>
             <td>
               <div class="btn-group">
-                <a href="{{ route('listagem.sala.informacoes', ['id' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('listagem.sala.informacoes', ['sala' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.salas', ['sala' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -157,11 +157,11 @@
             <td>Thalisson Manso Rodrigues</td>
             <td>
               <div class="btn-group">
-                <a href="{{ route('listagem.sala.informacoes', ['id' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('listagem.sala.informacoes', ['sala' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.salas', ['sala' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -175,11 +175,11 @@
             <td>Thalisson Manso Rodrigues</td>
             <td>
               <div class="btn-group">
-                <a href="{{ route('listagem.sala.informacoes', ['id' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
+                <a href="{{ route('listagem.sala.informacoes', ['sala' => 1]) }}" class="btn btn-sm btn-outline-gray">ver mais</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.salas', ['sala' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>

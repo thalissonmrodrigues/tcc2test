@@ -99,7 +99,7 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
+                <a href="{{ route('editar.professores', ['professor' => 1 ]) }}" class="btn btn-sm btn-outline-gray">Editar</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -118,7 +118,7 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
+                <a href="{{ route('editar.professores', ['professor' => 1 ]) }}" class="btn btn-sm btn-outline-gray">Editar</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -137,7 +137,7 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
+                <a href="{{ route('editar.professores', ['professor' => 1 ]) }}" class="btn btn-sm btn-outline-gray">Editar</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -156,7 +156,7 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
+                <a href="{{ route('editar.professores', ['professor' => 1 ]) }}" class="btn btn-sm btn-outline-gray">Editar</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -175,7 +175,7 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
+                <a href="{{ route('editar.professores', ['professor' => 1 ]) }}" class="btn btn-sm btn-outline-gray">Editar</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -194,7 +194,7 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
+                <a href="{{ route('editar.professores', ['professor' => 1 ]) }}" class="btn btn-sm btn-outline-gray">Editar</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
@@ -213,7 +213,7 @@
             <td>Tarde</td>
             <td>
               <div class="btn-group">
-                <a href="#" class="btn btn-sm btn-outline-gray">Editar</a>
+                <a href="{{ route('editar.professores', ['professor' => 1 ]) }}" class="btn btn-sm btn-outline-gray">Editar</a>
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">

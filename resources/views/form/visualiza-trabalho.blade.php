@@ -15,6 +15,7 @@
 
 @section('content')
   <div class="work-info-area d-flex justify-content-between row my-3">
+    {{-- Card Fixed --}}
     <div class="work-info col-md-5">
       <div class="row">
         <p><span>Nome: </span>Trabalho de conclusão de curso</p>
@@ -35,8 +36,8 @@
       </button>
     </div>
 
+    {{-- Card Flipping --}}
     <div class="card col-md-6">
-
       <div class="face front">
         <p>Descrição do Tabalho</p>
         <textarea disabled class="form-control">Descrição do trabalho</textarea>

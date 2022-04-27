@@ -17,6 +17,7 @@
 @section('cta_btn', 'Voltar')
 
 @section('content')
+  {{-- Card Fixed --}}
   <div class="work-info-area d-flex justify-content-between row my-3">
     <div class="work-info col-md-5">
       <div class="row">
@@ -37,8 +38,8 @@
       </button>
     </div>
 
+    {{-- Card Flipping --}}
     <div class="card col-md-6">
-
       <div class="face front">
         <p>Comentario</p>
         <textarea disabled class="form-control">Comentario</textarea>

@@ -1,0 +1,30 @@
+.form-add-edit {
+  min-height: 50vh;
+  color: $font-color;
+
+  label {
+    font-weight: bold;
+    color: $primary;
+  }
+
+  textarea {
+    resize: none;
+    height: 150px;
+  }
+
+  input[type="file"] {
+    max-width: 400px;
+  }
+
+  &.config {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+
+      width: 50%;
+    }
+  }
+}

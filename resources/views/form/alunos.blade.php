@@ -2,33 +2,41 @@
 
 @php
   $active_menu_header = 'alunos';
+  $variavel_dados_temporaria = FALSE;
 @endphp
 
-@section('title_page', 'Adicionar Aluno')
+@section('title_page')
+  @if ($variavel_dados_temporaria)
+    Editar Aluno
+  @else
+    Adicionar Aluno
+  @endif
+@endsection
+
 @section('icon_title')
 <i class="fa-solid fa-people-group"></i>
 @endsection
 
 @section('content')
-  <form action="#" method="POST" class="row g-3 my-2 form-adiciona">
+  <form action="#" method="POST" class="row g-3 my-2 form-add-edit">
     <div class="col-md-6 ps-0">
       <label class="form-label w-100">
         Nome
-        <input required type="text" class="form-control">
+        <input required type="text" class="form-control" value="@if ($variavel_dados_temporaria) Alguma Coisa @endif">
       </label>
     </div>
 
     <div class="col-md-6 ps-0">
       <label class="form-label w-100">
         Sobrenome
-        <input required type="text" class="form-control">
+        <input required type="text" class="form-control" value="@if ($variavel_dados_temporaria) Alguma Coisa @endif">
       </label>
     </div>
 
     <div class="col-md-6 ps-0">
       <label class="form-label w-100">
         Email
-        <input required type="email" class="form-control">
+        <input required type="email" class="form-control" value="@if ($variavel_dados_temporaria) Alguma Coisa @endif">
       </label>
     </div>
 
@@ -78,14 +86,14 @@
     <div class="col-12 ps-0">
       <div class="form-check">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox">
+          <input class="form-check-input" type="checkbox" @if ($variavel_dados_temporaria) checked @endif>
           Representante da sala
         </label>
       </div>
     </div>
 
     <div class="col-12 ps-0">
-      <button type="submit" class="btn btn-custom">Adicionar</button>
+      <button type="submit" class="btn btn-custom">@if ($variavel_dados_temporaria) Salvar @else Adicionar @endif</button>
       <a href="{{ route('listagem.alunos') }}" class="btn">cancelar</a>
     </div>
   </form>

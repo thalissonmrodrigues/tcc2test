@@ -99,7 +99,7 @@
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.trabalhos', ['trabalhos' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -119,7 +119,7 @@
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.trabalhos', ['trabalhos' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -139,7 +139,7 @@
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.trabalhos', ['trabalhos' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -159,7 +159,7 @@
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.trabalhos', ['trabalhos' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -179,7 +179,7 @@
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.trabalhos', ['trabalhos' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>
@@ -199,7 +199,7 @@
 
                 <button type="button" class="btn btn-outline-gray btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('editar.trabalhos', ['trabalhos' => 1 ]) }}">Editar</a></li>
                   <li><a class="dropdown-item" href="#">Remover</a></li>
                 </ul>
               </div>

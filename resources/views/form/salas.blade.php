@@ -2,15 +2,23 @@
 
 @php
   $active_menu_header = 'salas';
+  $variavel_dados_temporaria = FALSE;
 @endphp
 
-@section('title_page', 'Adicionar Sala')
+@section('title_page')
+  @if ($variavel_dados_temporaria)
+    Editar Sala - 8ºA Tarde
+  @else
+    Adicionar Sala
+  @endif
+@endsection
+
 @section('icon_title')
   <i class="fa-solid fa-school"></i>
 @endsection
 
 @section('content')
-  <form action="#" method="POST" class="row g-3 my-2 mx-auto form-adiciona">
+  <form action="#" method="POST" class="row g-3 my-2 mx-auto form-add-edit">
     <div class="col-md-12 ps-0">
       <label class="form-label">
         Série
@@ -48,7 +56,7 @@
     </div>
 
     <div class="col-12 ps-0">
-      <button type="submit" class="btn btn-custom">Adicionar</button>
+      <button type="submit" class="btn btn-custom">@if ($variavel_dados_temporaria) Salvar @else Adicionar @endif</button>
       <a href="{{ route('listagem.salas') }}" class="btn">cancelar</a>
     </div>
   </form>

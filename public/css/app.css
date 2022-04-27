@@ -29897,20 +29897,32 @@ html, body {
   transform: rotateY(360deg);
 }
 
-.form-adiciona {
+.form-add-edit {
   min-height: 50vh;
   color: #495057;
 }
-.form-adiciona label {
+.form-add-edit label {
   font-weight: bold;
   color: #0aa2c0;
 }
-.form-adiciona textarea {
+.form-add-edit textarea {
   resize: none;
   height: 150px;
 }
-.form-adiciona input[type=file] {
+.form-add-edit input[type=file] {
   max-width: 400px;
+}
+.form-add-edit.config input[type=text],
+.form-add-edit.config input[type=email],
+.form-add-edit.config input[type=password] {
+  width: 50%;
+}
+@media (max-width: 767.98px) {
+  .form-add-edit.config input[type=text],
+.form-add-edit.config input[type=email],
+.form-add-edit.config input[type=password] {
+    width: 100%;
+  }
 }
 
 .box-login {
