@@ -1,5 +1,5 @@
 module.exports = {
   extends: ['stylelint-config-standard-scss'],
   plugins: ['stylelint-scss'],
-  ignoreFiles: ["**/*.js", "./vendor/**", '**/*.blade.php'],
+  ignoreFiles: ["**/*.js", "./vendor/**", "./node_modules/**", '**/*.blade.php'],
 }
