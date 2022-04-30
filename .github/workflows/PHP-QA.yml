@@ -21,5 +21,5 @@ jobs:
       - name: PHPCS check
         uses: chekalsky/phpcs-action@v1
         with:
-          phpcs_bin_path: './vendor/bin/phpcs --standard=phpcs-laravel app/'
+          phpcs_bin_path: '/vendor/bin/phpcs --standard=phpcs-laravel app/'
           enable_warnings: true
