@@ -22,4 +22,5 @@ jobs:
         uses: chindit/actions-phpcs@master
         with:
           dir: app/
+          cli: --standard=phpcs-laravel
 
