@@ -22,5 +22,5 @@ jobs:
         uses: chindit/actions-phpcs@master
         with:
           dir: app/
-          cli: --standard=PSR1,PSR12
+          cli: --standard=phpcs-laravel
 
