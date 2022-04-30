@@ -21,5 +21,4 @@ jobs:
       - name: PHP Code Style (phpcs)
         uses: chindit/actions-phpcs@master
         with:
-          dir: app/
-          cli: '--standard=phpcs-laravel'
+          cli: '--standard=phpcs-laravel /app'
