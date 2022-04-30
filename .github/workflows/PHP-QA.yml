@@ -21,4 +21,5 @@ jobs:
       - name: PHPCS check
         uses: chekalsky/phpcs-action@v1
         with:
+          files: "app/"
           enable_warnings: true
