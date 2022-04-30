@@ -1,13 +1,14 @@
 name: Sass-QA
 on: [push]
+
 jobs:
-  stylelint:
-    name: runner / stylelint
+  linters:
+    name: stylelint
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: stylelint
-        uses: reviewdog/action-stylelint@v1
-        with:
-          reporter: github-pr-check
-          stylelint_input: '**/*.scss'
+      - uses: actions/checkout@v1
+      - uses: actions-hub/stylelint@master
+        env:
+          PATTERN: "*.scss"
+          INDENT_SPACES: 4
