@@ -22,5 +22,5 @@ jobs:
         uses: chindit/actions-phpcs@master
         with:
           dir: app/
-          cli: --standard=PS12
+          cli: --standard=PSR12
 
