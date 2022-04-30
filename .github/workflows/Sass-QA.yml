@@ -1,14 +1,14 @@
 name: Sass-QA
-on:
-  push:
-    paths-ignore:
-      - '**.html'
-      - '**.install'
-      - '**.js'
-      - '**.md'
-      - '**.php'
-      - '**.yml'
-      - 'tests/**'
+on: [push]
+  paths-ignore:
+    - '**.html'
+    - '**.install'
+    - '**.js'
+    - '**.md'
+    - '**.php'
+    - '**.yml'
+    - 'tests/**'
+
 jobs:
   linters:
     name: stylelint
