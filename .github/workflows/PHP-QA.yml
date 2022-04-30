@@ -1,0 +1,19 @@
+name: PHO-QA
+on:
+  push:
+    paths-ignore:
+      - '**.html'
+      - '**.install'
+      - '**.js'
+      - '**.md'
+      - '**.scss'
+      - '**.yml'
+      - 'tests/**'
+
+jobs:
+  phpunit:
+    name: PHPUnit
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: nathanheffley/laravel-phpunit-action@master

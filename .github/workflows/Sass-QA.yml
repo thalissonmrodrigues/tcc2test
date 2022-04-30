@@ -1,0 +1,19 @@
+name: Sass-QA
+on:
+  push:
+    paths-ignore:
+      - '**.html'
+      - '**.install'
+      - '**.js'
+      - '**.md'
+      - '**.php'
+      - '**.yml'
+      - 'tests/**'
+jobs:
+  linters:
+    name: stylelint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions-hub/stylelint@master
