@@ -18,8 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: PHPCS check
-        uses: chekalsky/phpcs-action@v1
+      - name: PHP Code Style (phpcs)
+        uses: chindit/actions-phpcs@master
         with:
-          dir: 'app/'
-          enable_warnings: true
+          dir: app/
