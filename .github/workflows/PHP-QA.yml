@@ -23,7 +23,3 @@ jobs:
         with:
           dir: app/
 
-      - name: PHP CS Fixer
-        uses: StephaneBour/actions-php-cs-fixer@1.0
-        with:
-          dir: './app'
