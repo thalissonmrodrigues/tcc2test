@@ -11,7 +11,7 @@ jobs:
       - name: Generate key
         run: php artisan key:generate
       - name: Run PHPunit
-        uses: vendor/bin/phpunit
+        run: vendor/bin/phpunit
 
   PHPlint:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: composer install
       - name: Run PHPlint
-        uses: vendor/bin/phplint --no-cache
+        run: vendor/bin/phplint --no-cache
 
   PHPcs:
     runs-on: ubuntu-latest
