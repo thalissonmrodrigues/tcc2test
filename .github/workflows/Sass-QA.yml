@@ -11,4 +11,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run StyleLint
-        run: npx stylelint resources/**/*.scss
+        run: npx stylelint "resources/**/*.scss"
