@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install node_modules
+      - name: Install composer modules
         run: composer install
       - name: run PHPunit
         run: vendor/bin/phpunit
