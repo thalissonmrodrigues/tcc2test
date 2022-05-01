@@ -1,4 +1,4 @@
-name: TEST
+name: PHP-QA
 on: [push]
 
 jobs:
@@ -32,4 +32,3 @@ jobs:
         run: composer install
       - name: Run PHP CodeStyle (phpcs)
         run: vendor/bin/phpcs --standard=PSR1,PSR2,PSR12,Zend app/
-
