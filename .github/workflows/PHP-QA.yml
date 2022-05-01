@@ -10,5 +10,3 @@ jobs:
       - run: composer install
       - name: run PHPunit
       - run: vendor/bin/phpunit
-      #- uses: nathanheffley/laravel-phpunit-action@master
-
