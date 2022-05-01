@@ -6,13 +6,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: nathanheffley/laravel-phpunit-action@master
+      - name: PHPunit
+        uses: nathanheffley/laravel-phpunit-action@master
 
   PHPlint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: michaelw90/PHP-Lint@master
+      - name: PHPlint
+        uses: michaelw90/PHP-Lint@master
 
   PHPcs:
     runs-on: ubuntu-latest
