@@ -6,23 +6,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: PHPunit
+      - name: Run PHPunit
         uses: nathanheffley/laravel-phpunit-action@master
 
   PHPlint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: PHPlint
+      - name: Run PHPlint
         uses: michaelw90/PHP-Lint@master
 
   PHPcs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: PHP Code Style (phpcs)
+      - name: Run PHP CodeStyle (phpcs)
         uses: chindit/actions-phpcs@master
         with:
           dir: app/
           cli: --standard=PSR1,PSR2,PSR12,Zend
-

@@ -8,6 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: actions-hub/stylelint@master
+      - name: Run StyleLint
+        uses: actions-hub/stylelint@master
         env:
           PATTERN: "**/*.scss"
