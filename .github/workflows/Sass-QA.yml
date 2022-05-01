@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+      - name: Install dependencies
+        run: npm install
       - name: Run StyleLint
-        uses: actions-hub/stylelint@master
-        env:
-          PATTERN: "**/*.scss"
+        run: npx stylelint "resources/**/*.scss"

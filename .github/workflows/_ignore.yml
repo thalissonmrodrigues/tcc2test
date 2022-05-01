@@ -1,0 +1,27 @@
+#name: PHP-QA
+#on: [push]
+
+#jobs:
+  PHPunit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run PHPunit
+        uses: nathanheffley/laravel-phpunit-action@master
+
+  PHPlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run PHPlint
+        uses: michaelw90/PHP-Lint@master
+
+  PHPcs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run PHP CodeStyle (phpcs)
+        uses: chindit/actions-phpcs@master
+        with:
+          dir: app/
+          cli: --standard=PSR1,PSR2,PSR12,Zend

@@ -1,27 +1,35 @@
-name: PHP-QA
+name: TEST
 on: [push]
 
 jobs:
   PHPunit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - name: Copy .env
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+      - name: Install dependencies
+        run: composer install
+      - name: Generate key
+        run: php artisan key:generate
       - name: Run PHPunit
-        uses: nathanheffley/laravel-phpunit-action@master
+        run: vendor/bin/phpunit
 
   PHPlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: composer install
       - name: Run PHPlint
-        uses: michaelw90/PHP-Lint@master
+        run: vendor/bin/phplint --no-cache app/
 
   PHPcs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: composer install
       - name: Run PHP CodeStyle (phpcs)
-        uses: chindit/actions-phpcs@master
-        with:
-          dir: app/
-          cli: --standard=PSR1,PSR2,PSR12,Zend
+        run: vendor/bin/phpcs --standard=PSR1,PSR2,PSR12,Zend app/
+
